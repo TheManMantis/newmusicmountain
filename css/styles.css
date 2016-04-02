@@ -339,6 +339,9 @@ table {
   border-spacing: 0; }
 
 /* Colors */
+/* Shadows */
+/* Fonts */
+/* Border */
 /* Variables - Breakpoints */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
@@ -354,6 +357,7 @@ table {
     display: block;
     clear: both; }
 
+/* Basic CSS */
 body {
   padding: 0;
   margin: 0;
@@ -363,7 +367,61 @@ body {
   background-size: 100%;
   background-color: #52b2ef; }
 
+h1 {
+  font-family: Anton;
+  font-size: 40px;
+  color: #022F80;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px; }
+
+h2 {
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  font-size: 23px;
+  color: #0496c6;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 26.4px; }
+
+p {
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px; }
+
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+/* For all the links on the pages */
+a.link {
+  color: #0496C6;
+  text-decoration: none;
+  font-weight: bold; }
+
 /* This is the div that all content will fall under */
+.refer-section, .redeem-section {
+  background-color: rgba(250, 253, 255, 0.93);
+  box-shadow: 0px 0px 13px 0px #B1B2C3;
+  padding: 0;
+  height: 1850px; }
+
+.redeem-section {
+  height: 1350px; }
+
 /* Header, Logo, and Nav Buttons */
 header {
   background-color: rgba(27, 85, 119, 0.93);
@@ -377,16 +435,15 @@ header {
   padding: 35px 0px; }
 
 button.dropbtn {
-  background-color: #2C729C;
   color: white;
   padding: 16px;
   font-size: 13px;
   border: none;
   cursor: pointer;
-  background: rgba(42, 96, 128, 0);
+  background: rgba(27, 85, 119, 0);
   color: white;
   border: none;
-  padding: 8px 10px; }
+  padding: 7px 10px; }
 
 .dropdown {
   position: relative;
@@ -395,7 +452,7 @@ button.dropbtn {
 .dropdown a {
   text-decoration: none;
   color: white;
-  font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif; }
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif; }
 
 .dropdown-content {
   display: none;
@@ -405,7 +462,7 @@ button.dropbtn {
   box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.15); }
 
 .dropdown-content a {
-  font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
   font-size: 12px;
   color: black;
   padding: 12px 16px;
@@ -420,43 +477,6 @@ button.dropbtn {
 
 .dropdown:hover .dropbtn {
   background-color: #0496C6; }
-
-/* This is the main content of the page */
-/* This is section is for the Refer A Friend Page */
-section {
-  background-color: rgba(250, 253, 255, 0.93);
-  padding: 0;
-  height: 1850px; }
-
-/* This is section is for the Redeem Awards Page */
-.redeem-section {
-  height: 1350px; }
-
-h1 {
-  font-family: Anton;
-  font-size: 40px;
-  color: #022F80;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 500;
-  line-height: 26.4px; }
-
-h2 {
-  font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
-  font-size: 23px;
-  color: #0496c6;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: bold;
-  line-height: 26.4px; }
-
-p {
-  font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 400;
-  line-height: 20px; }
 
 /* For all the links on the pages */
 a.link {
@@ -519,16 +539,7 @@ a.link {
   display: flex;
   justify-content: centers; }
 
-.form-input {
-  padding: 10px;
-  margin: 0px 20px;
-  width: 400px;
-  border-top: 3px solid rgba(236, 235, 235, 0.8);
-  border-left: 3px solid rgba(236, 235, 235, 0.8);
-  border-right: none;
-  border-bottom: none; }
-
-.form-input-2 {
+.form-input, .form-input-2 {
   padding: 10px;
   margin: 0px 20px;
   width: 400px;
@@ -548,7 +559,7 @@ a.link {
   border-left: 3px solid rgba(236, 235, 235, 0.8);
   border-right: none;
   border-bottom: none;
-  font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif; }
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif; }
 
 .message ::input-placeholder {
   padding: 0; }
@@ -559,21 +570,8 @@ a.link {
   padding: 8px 45px;
   background-color: #0E87FF;
   background-image: linear-gradient(#0A7598, #03103E);
-  font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
   font-size: 18px;
-  color: white; }
-
-.redeem-award {
-  margin: 0 21px;
-  border: 1px solid #BBF0FF;
-  padding: 8px 45px;
-  background-color: #0E87FF;
-  background-image: linear-gradient(#67D5FF, #0C75BF);
-  font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
-  font-size: 18px; }
-
-.redeem-award a {
-  text-decoration: none;
   color: white; }
 
 .what-is-this {
@@ -609,10 +607,6 @@ a.link {
   padding: 15px;
   display: inline-block; }
 
-.rewards-header {
-  padding-bottom: 0;
-  margin-bottom: 0; }
-
 .choose-below {
   font-style: italic;
   font-size: 14px;
@@ -624,19 +618,6 @@ a.link {
 
 .splash {
   width: 400px; }
-
-ul,
-ol,
-li {
-  margin: 0;
-  padding: 0; }
-
-li {
-  list-style: none; }
-
-img {
-  max-width: 100%;
-  height: auto; }
 
 @media (max-width: 430px) {
   body {
@@ -682,10 +663,7 @@ img {
   .redeem-section {
     height: 1384px; }
 
-  form {
-    width: 89.79592%; }
-
-  .referees, .friend-info {
+  form, .referees, .friend-info {
     width: 89.79592%; }
 
   .splash {
