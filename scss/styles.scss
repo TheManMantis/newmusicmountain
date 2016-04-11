@@ -8,6 +8,7 @@
     display: block;
   }
 }
+
  /* Colors */
 $color1: #FBFBFB;
 $body-color: rgb(82, 178, 239);
@@ -273,6 +274,20 @@ a.link {
   font-family:$site-font;
   font-size: 18px;
   color: white;
+}
+.redeem-award{
+  margin: 0 21px;
+  border: 1px solid #7999BF;
+  padding: 8px 45px;
+  background-color: #0E87FF;
+  background-image: linear-gradient(#5ACDF3, #2F86AD);
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  font-size: 18px;
+  color: white;
+  a{
+    text-decoration: none;
+    color: white;
+  }
 }
 .what-is-this{
   padding-left: 3em;
