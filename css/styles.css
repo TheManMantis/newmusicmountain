@@ -516,16 +516,10 @@ a.link {
   background-color: rgba(250, 253, 255, 0.93);
   box-shadow: 0px 0px 13px 0px #B1B2C3;
   padding: 0;
-  height: 1850px;
-}
-
-/* line 120, ../scss/styles.scss */
-.redeem-section {
-  height: 1350px;
 }
 
 /* Header, Logo, and Nav Buttons */
-/* line 125, ../scss/styles.scss */
+/* line 121, ../scss/styles.scss */
 header {
   background-color: rgba(27, 85, 119, 0.93);
   height: 167px;
@@ -533,34 +527,39 @@ header {
   margin: 0;
 }
 
-/* line 131, ../scss/styles.scss */
+/* line 127, ../scss/styles.scss */
 .logo {
   margin: 0px auto;
   display: block;
   padding: 35px 0px;
 }
 
-/* line 136, ../scss/styles.scss */
+/* line 132, ../scss/styles.scss */
 .slicknav_menu {
   display: none;
 }
 
-@media screen and (max-width: 40em) {
-  /* line 141, ../scss/styles.scss */
+@media screen and (max-width: 940px) {
+  /* line 137, ../scss/styles.scss */
   .js #menu {
     display: none;
   }
 
-  /* line 145, ../scss/styles.scss */
+  /* line 141, ../scss/styles.scss */
   .js .slicknav_menu {
     display: block;
   }
+
+  /* line 144, ../scss/styles.scss */
+  .refer-section, .redeem-section {
+    box-shadow: 0px 0px 13px 0px rgba(177, 178, 195, 0);
+  }
 }
-/* line 149, ../scss/styles.scss */
+/* line 148, ../scss/styles.scss */
 #primary-nav-wrap {
   margin-top: 0;
 }
-/* line 151, ../scss/styles.scss */
+/* line 150, ../scss/styles.scss */
 #primary-nav-wrap ul {
   list-style: none;
   position: relative;
@@ -568,7 +567,7 @@ header {
   margin: 0;
   padding: 0;
 }
-/* line 157, ../scss/styles.scss */
+/* line 156, ../scss/styles.scss */
 #primary-nav-wrap ul a {
   display: block;
   color: #FFF;
@@ -579,14 +578,14 @@ header {
   padding: 0 12px;
   font-family: "HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-/* line 167, ../scss/styles.scss */
+/* line 166, ../scss/styles.scss */
 #primary-nav-wrap ul li {
   position: relative;
   float: left;
   margin: 0;
   padding: 0;
 }
-/* line 173, ../scss/styles.scss */
+/* line 172, ../scss/styles.scss */
 #primary-nav-wrap ul ul {
   display: none;
   position: absolute;
@@ -596,39 +595,39 @@ header {
   padding: 0;
   box-shadow: 2px 2px 5px rgba(76, 199, 255, 0.47);
 }
-/* line 181, ../scss/styles.scss */
+/* line 180, ../scss/styles.scss */
 #primary-nav-wrap ul ul li {
   float: none;
   width: 200px;
 }
-/* line 185, ../scss/styles.scss */
+/* line 184, ../scss/styles.scss */
 #primary-nav-wrap ul ul a {
   line-height: 120%;
   padding: 10px 15px;
 }
-/* line 189, ../scss/styles.scss */
+/* line 188, ../scss/styles.scss */
 #primary-nav-wrap ul ul ul {
   top: 0;
   left: 100%;
 }
 
-/* line 196, ../scss/styles.scss */
+/* line 195, ../scss/styles.scss */
 #primary-nav-wrap ul li:hover > ul {
   display: block;
 }
 
-/* line 200, ../scss/styles.scss */
+/* line 199, ../scss/styles.scss */
 #primary-nav-wrap ul li:hover {
   background: #6097B7;
 }
 
-/* line 204, ../scss/styles.scss */
+/* line 203, ../scss/styles.scss */
 #primary-nav-wrap ul li a:hover {
   color: rgba(27, 85, 119, 0.93);
 }
 
 /* For all the links on the pages */
-/* line 209, ../scss/styles.scss */
+/* line 208, ../scss/styles.scss */
 a.link {
   color: #0496C6;
   text-decoration: none;
@@ -636,7 +635,7 @@ a.link {
 }
 
 /* This is the first paragraph for both pages */
-/* line 215, ../scss/styles.scss */
+/* line 214, ../scss/styles.scss */
 .friend-info {
   margin: 0 20px;
   width: 450px;
@@ -645,7 +644,7 @@ a.link {
 }
 
 /* This is the image by the first paragraph, the image on the Redeem Awards page has width added to it inline */
-/* line 222, ../scss/styles.scss */
+/* line 221, ../scss/styles.scss */
 .cooler {
   display: inline;
   float: right;
@@ -656,20 +655,20 @@ a.link {
 }
 
 /* This is the Partners div that contains all the logos */
-/* line 231, ../scss/styles.scss */
+/* line 230, ../scss/styles.scss */
 .partners {
   margin: 0 20px;
   display: block;
   padding: 0 20px;
 }
 
-/* line 236, ../scss/styles.scss */
+/* line 235, ../scss/styles.scss */
 .logo-set {
   display: flex;
   justify-content: center;
 }
 
-/* line 240, ../scss/styles.scss */
+/* line 239, ../scss/styles.scss */
 .partners ul {
   list-style-type: none;
   margin: 0;
@@ -677,12 +676,12 @@ a.link {
   overflow: hidden;
 }
 
-/* line 246, ../scss/styles.scss */
+/* line 245, ../scss/styles.scss */
 .partners-logos li {
-  float: left;
+  display: inline-flex;
 }
 
-/* line 249, ../scss/styles.scss */
+/* line 248, ../scss/styles.scss */
 .partners-logos li a {
   display: block;
   color: white;
@@ -691,26 +690,26 @@ a.link {
   text-decoration: none;
 }
 
-/* line 256, ../scss/styles.scss */
+/* line 255, ../scss/styles.scss */
 .partners-logos img {
   width: 135px;
   height: auto;
 }
 
 /* These are all the form stylings */
-/* line 262, ../scss/styles.scss */
+/* line 261, ../scss/styles.scss */
 .form {
   display: flex;
   justify-content: center;
 }
 
-/* line 266, ../scss/styles.scss */
+/* line 265, ../scss/styles.scss */
 .form-2 {
   display: flex;
   justify-content: centers;
 }
 
-/* line 270, ../scss/styles.scss */
+/* line 269, ../scss/styles.scss */
 .form-input, .form-input-2 {
   padding: 10px;
   margin: 0px 20px;
@@ -721,7 +720,7 @@ a.link {
   border-bottom: none;
 }
 
-/* line 279, ../scss/styles.scss */
+/* line 278, ../scss/styles.scss */
 .message {
   width: 865px;
   height: 100px;
@@ -736,12 +735,12 @@ a.link {
   font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
 }
 
-/* line 292, ../scss/styles.scss */
+/* line 291, ../scss/styles.scss */
 .message ::input-placeholder {
   padding: 0;
 }
 
-/* line 295, ../scss/styles.scss */
+/* line 294, ../scss/styles.scss */
 .submit {
   margin: 0 21px;
   border: 1px solid #094790;
@@ -753,7 +752,7 @@ a.link {
   color: white;
 }
 
-/* line 305, ../scss/styles.scss */
+/* line 304, ../scss/styles.scss */
 .redeem-award {
   margin: 0 21px;
   border: 1px solid #7999BF;
@@ -764,13 +763,13 @@ a.link {
   font-size: 18px;
   color: white;
 }
-/* line 314, ../scss/styles.scss */
+/* line 313, ../scss/styles.scss */
 .redeem-award a {
   text-decoration: none;
   color: white;
 }
 
-/* line 319, ../scss/styles.scss */
+/* line 318, ../scss/styles.scss */
 .what-is-this {
   padding-left: 3em;
   font-size: 14px;
@@ -779,7 +778,7 @@ a.link {
 }
 
 /* This is the Refer Paragraph over the form on the refer a freind page */
-/* line 326, ../scss/styles.scss */
+/* line 325, ../scss/styles.scss */
 .refer {
   margin: 35px 20px 0 20px;
   display: block;
@@ -787,7 +786,7 @@ a.link {
 }
 
 /* This is the Referees Paragraph on the refer a freind page */
-/* line 332, ../scss/styles.scss */
+/* line 331, ../scss/styles.scss */
 .referees {
   margin: 55px 20px 0 20px;
   width: 450px;
@@ -796,7 +795,7 @@ a.link {
 }
 
 /* The water splash image at the bottom of the page */
-/* line 339, ../scss/styles.scss */
+/* line 338, ../scss/styles.scss */
 .splash {
   display: inline;
   float: right;
@@ -805,7 +804,7 @@ a.link {
 }
 
 /* Preferred Rewards section on Redeem Awards page */
-/* line 346, ../scss/styles.scss */
+/* line 345, ../scss/styles.scss */
 .choose-reward {
   margin: 0 20px;
   width: 450px;
@@ -813,7 +812,7 @@ a.link {
   display: inline-block;
 }
 
-/* line 352, ../scss/styles.scss */
+/* line 351, ../scss/styles.scss */
 .choose-below {
   font-style: italic;
   font-size: 14px;
@@ -821,107 +820,107 @@ a.link {
   margin-top: 0;
 }
 
-/* line 358, ../scss/styles.scss */
+/* line 357, ../scss/styles.scss */
 .redeem-one-time {
   font-size: 14px;
 }
 
-/* line 361, ../scss/styles.scss */
+/* line 360, ../scss/styles.scss */
 .splash {
   width: 400px;
 }
 
 @media (max-width: 430px) {
-  /* line 366, ../scss/styles.scss */
+  /* line 365, ../scss/styles.scss */
   body {
     background-color: rgba(250, 253, 255, 0.93);
     background-image: none;
   }
 
-  /* line 370, ../scss/styles.scss */
+  /* line 369, ../scss/styles.scss */
   .friend-info, .referees {
     width: 83.05085%;
   }
 
-  /* line 373, ../scss/styles.scss */
+  /* line 372, ../scss/styles.scss */
   .form {
     padding-left: 6.77966%;
     width: 83.05085%;
   }
 
-  /* line 377, ../scss/styles.scss */
+  /* line 376, ../scss/styles.scss */
   .form-input, .choose-reward {
     width: 89.79592%;
     margin: 0;
   }
 
-  /* line 381, ../scss/styles.scss */
+  /* line 380, ../scss/styles.scss */
   form {
     width: 89.79592%;
   }
 
-  /* line 384, ../scss/styles.scss */
+  /* line 383, ../scss/styles.scss */
   .form-input-2, .message {
     width: 100%;
   }
 
-  /* line 387, ../scss/styles.scss */
+  /* line 386, ../scss/styles.scss */
   .redeem-section {
     height: 2200px;
   }
 
-  /* line 390, ../scss/styles.scss */
+  /* line 389, ../scss/styles.scss */
   .splash {
     width: 260px;
     margin-top: 0;
   }
 
-  /* line 394, ../scss/styles.scss */
+  /* line 393, ../scss/styles.scss */
   h1 {
     line-height: 38px;
   }
 }
 @media (min-width: 430px) and (max-width: 770px) {
-  /* line 399, ../scss/styles.scss */
+  /* line 398, ../scss/styles.scss */
   img.cooler {
     width: 240px;
   }
 
-  /* line 402, ../scss/styles.scss */
+  /* line 401, ../scss/styles.scss */
   .redeem-section {
     height: 1384px;
   }
 
-  /* line 405, ../scss/styles.scss */
+  /* line 404, ../scss/styles.scss */
   form, .referees, .friend-info {
     width: 89.79592%;
   }
 
-  /* line 409, ../scss/styles.scss */
+  /* line 408, ../scss/styles.scss */
   .splash {
     width: 260px;
     margin-top: 0;
   }
 }
 @media (max-width: 720px) {
-  /* line 415, ../scss/styles.scss */
+  /* line 414, ../scss/styles.scss */
   img.cooler {
     display: none;
   }
 }
 @media (max-width: 960px) {
-  /* line 420, ../scss/styles.scss */
+  /* line 419, ../scss/styles.scss */
   .form-input-2, .message {
     width: 100%;
   }
 
-  /* line 423, ../scss/styles.scss */
+  /* line 422, ../scss/styles.scss */
   .name-text {
     margin-bottom: 18px;
   }
 }
 @media (max-width: 920px) {
-  /* line 428, ../scss/styles.scss */
+  /* line 427, ../scss/styles.scss */
   body {
     background-color: rgba(250, 253, 255, 0.93);
     background-image: none;
