@@ -58,7 +58,7 @@ $susy:(
 body{
   padding: 0;
   margin: 0;
-  background-image: url("../assets/imgs/Water-Splash-Background.jpg");
+  background-image: url("/images/refer-a-friend/Water-Splash-Background.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 100%;
@@ -133,51 +133,78 @@ header{
   display: block;
   padding: 35px 0px;
 }
-button.dropbtn {
-  color: white;
-  padding: 16px;
-  font-size: 13px;
-  border: none;
-  cursor: pointer;
-  background: $button-color;
-  color: white;
-  border: none;
-  padding: 7px 10px;
-}
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-.dropdown a{
-  text-decoration: none;
-  color: white;
-  font-family: $site-font;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: rgb(248, 252, 255);
-  min-width: 160px;
-  box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.15);
-}
-.dropdown-content a {
-  font-family: $site-font;
-  font-size: 12px;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-.dropdown-content a:hover {
-  background-color: rgb(193, 225, 249);
-}
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-.dropdown:hover .dropbtn {
-  background-color: $hover-button-dropdown;
+.slicknav_menu {
+	display:none;
 }
 
+@media screen and (max-width: 40em) {
+  .js #menu {
+		display:none;
+	}
+
+	.js .slicknav_menu {
+		display:block;
+	}
+}
+#primary-nav-wrap{
+  margin-top: 0;
+  ul{
+    list-style:none;
+  	position:relative;
+  	float:left;
+  	margin:0;
+  	padding:0;
+    a{
+      display:block;
+    	color:#FFF;
+    	text-decoration:none;
+    	font-weight:700;
+    	font-size:12px;
+    	line-height:32px;
+    	padding:0 12px;
+    	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+    li{
+      position:relative;
+    	float:left;
+    	margin:0;
+    	padding:0;
+    }
+    ul{
+      display:none;
+      position:absolute;
+      top:100%;
+      left:0;
+      background:#6097B7;
+      padding:0;
+      box-shadow: 2px 2px 5px rgba(76, 199, 255, 0.47);
+      li{
+        float:none;
+	      width:200px;
+      }
+      a{
+        line-height:120%;
+	      padding:10px 15px;
+      }
+      ul{
+        top:0;
+      	left:100%;
+      }
+    }
+  }
+}
+#primary-nav-wrap ul li:hover > ul
+{
+	display:block;
+}
+#primary-nav-wrap ul li:hover
+{
+	background:#6097B7;
+}
+#primary-nav-wrap ul li a:hover
+{
+  color: rgba(27, 85, 119, 0.93);
+}
 /* For all the links on the pages */
 a.link {
   color: $link-color;
@@ -340,9 +367,6 @@ a.link {
     background-color: $media-background-color;
     background-image: none;
   }
-  .nav-buttons,{
-    display: none;
-  }
   .friend-info, .referees{
     width: span(10 of 12);
   }
@@ -374,9 +398,6 @@ a.link {
 @media (min-width:$bp-s) and (max-width:$bp-m){
   img.cooler{
     width: 240px;
-  }
-  .nav-buttons{
-    display: none;
   }
   .redeem-section{
     height: 1384px;
