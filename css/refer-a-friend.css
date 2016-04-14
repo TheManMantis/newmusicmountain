@@ -426,7 +426,7 @@ table {
   box-sizing: border-box;
 }
 
-/* line 52, ../scss/styles.scss */
+/* line 53, ../scss/refer-a-friend.scss */
 .wrap {
   max-width: 970px;
   margin-left: auto;
@@ -440,7 +440,7 @@ table {
 }
 
 /* Basic CSS */
-/* line 58, ../scss/styles.scss */
+/* line 59, ../scss/refer-a-friend.scss */
 body {
   padding: 0;
   margin: 0;
@@ -451,7 +451,7 @@ body {
   background-color: #52b2ef;
 }
 
-/* line 67, ../scss/styles.scss */
+/* line 68, ../scss/refer-a-friend.scss */
 h1 {
   font-family: Anton;
   font-size: 40px;
@@ -462,7 +462,7 @@ h1 {
   line-height: 26.4px;
 }
 
-/* line 76, ../scss/styles.scss */
+/* line 77, ../scss/refer-a-friend.scss */
 h2 {
   font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
   font-size: 23px;
@@ -473,7 +473,7 @@ h2 {
   line-height: 26.4px;
 }
 
-/* line 85, ../scss/styles.scss */
+/* line 86, ../scss/refer-a-friend.scss */
 p {
   font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
   font-size: 16px;
@@ -483,7 +483,7 @@ p {
   line-height: 20px;
 }
 
-/* line 93, ../scss/styles.scss */
+/* line 94, ../scss/refer-a-friend.scss */
 ul,
 ol,
 li {
@@ -491,19 +491,19 @@ li {
   padding: 0;
 }
 
-/* line 99, ../scss/styles.scss */
+/* line 100, ../scss/refer-a-friend.scss */
 li {
   list-style: none;
 }
 
-/* line 101, ../scss/styles.scss */
+/* line 102, ../scss/refer-a-friend.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
 /* For all the links on the pages */
-/* line 107, ../scss/styles.scss */
+/* line 108, ../scss/refer-a-friend.scss */
 a.link {
   color: #0496C6;
   text-decoration: none;
@@ -511,15 +511,15 @@ a.link {
 }
 
 /* This is the div that all content will fall under */
-/* line 114, ../scss/styles.scss */
-.refer-section, .redeem-section {
+/* line 115, ../scss/refer-a-friend.scss */
+.main-section {
   background-color: rgba(250, 253, 255, 0.93);
   box-shadow: 0px 0px 13px 0px #B1B2C3;
   padding: 0;
 }
 
 /* Header, Logo, and Nav Buttons */
-/* line 121, ../scss/styles.scss */
+/* line 122, ../scss/refer-a-friend.scss */
 header {
   background-color: rgba(27, 85, 119, 0.93);
   height: 167px;
@@ -527,39 +527,40 @@ header {
   margin: 0;
 }
 
-/* line 127, ../scss/styles.scss */
+/* line 128, ../scss/refer-a-friend.scss */
 .logo {
   margin: 0px auto;
   display: block;
   padding: 35px 0px;
 }
 
-/* line 132, ../scss/styles.scss */
+/*Navigation settings, slicknav*/
+/* line 135, ../scss/refer-a-friend.scss */
 .slicknav_menu {
   display: none;
 }
 
 @media screen and (max-width: 940px) {
-  /* line 137, ../scss/styles.scss */
+  /* line 139, ../scss/refer-a-friend.scss */
   .js #menu {
     display: none;
   }
 
-  /* line 141, ../scss/styles.scss */
+  /* line 142, ../scss/refer-a-friend.scss */
   .js .slicknav_menu {
     display: block;
   }
 
-  /* line 144, ../scss/styles.scss */
-  .refer-section, .redeem-section {
+  /* line 145, ../scss/refer-a-friend.scss */
+  .main-section {
     box-shadow: 0px 0px 13px 0px rgba(177, 178, 195, 0);
   }
 }
-/* line 148, ../scss/styles.scss */
+/* line 149, ../scss/refer-a-friend.scss */
 #primary-nav-wrap {
   margin-top: 0;
 }
-/* line 150, ../scss/styles.scss */
+/* line 151, ../scss/refer-a-friend.scss */
 #primary-nav-wrap ul {
   list-style: none;
   position: relative;
@@ -567,7 +568,7 @@ header {
   margin: 0;
   padding: 0;
 }
-/* line 156, ../scss/styles.scss */
+/* line 157, ../scss/refer-a-friend.scss */
 #primary-nav-wrap ul a {
   display: block;
   color: #FFF;
@@ -578,14 +579,14 @@ header {
   padding: 0 12px;
   font-family: "HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-/* line 166, ../scss/styles.scss */
+/* line 167, ../scss/refer-a-friend.scss */
 #primary-nav-wrap ul li {
   position: relative;
   float: left;
   margin: 0;
   padding: 0;
 }
-/* line 172, ../scss/styles.scss */
+/* line 173, ../scss/refer-a-friend.scss */
 #primary-nav-wrap ul ul {
   display: none;
   position: absolute;
@@ -595,39 +596,39 @@ header {
   padding: 0;
   box-shadow: 2px 2px 5px rgba(76, 199, 255, 0.47);
 }
-/* line 180, ../scss/styles.scss */
+/* line 181, ../scss/refer-a-friend.scss */
 #primary-nav-wrap ul ul li {
   float: none;
   width: 200px;
 }
-/* line 184, ../scss/styles.scss */
+/* line 185, ../scss/refer-a-friend.scss */
 #primary-nav-wrap ul ul a {
   line-height: 120%;
   padding: 10px 15px;
 }
-/* line 188, ../scss/styles.scss */
+/* line 189, ../scss/refer-a-friend.scss */
 #primary-nav-wrap ul ul ul {
   top: 0;
   left: 100%;
 }
 
-/* line 195, ../scss/styles.scss */
+/* line 196, ../scss/refer-a-friend.scss */
 #primary-nav-wrap ul li:hover > ul {
   display: block;
 }
 
-/* line 199, ../scss/styles.scss */
+/* line 200, ../scss/refer-a-friend.scss */
 #primary-nav-wrap ul li:hover {
   background: #6097B7;
 }
 
-/* line 203, ../scss/styles.scss */
+/* line 204, ../scss/refer-a-friend.scss */
 #primary-nav-wrap ul li a:hover {
   color: rgba(27, 85, 119, 0.93);
 }
 
 /* For all the links on the pages */
-/* line 208, ../scss/styles.scss */
+/* line 209, ../scss/refer-a-friend.scss */
 a.link {
   color: #0496C6;
   text-decoration: none;
@@ -635,7 +636,7 @@ a.link {
 }
 
 /* This is the first paragraph for both pages */
-/* line 214, ../scss/styles.scss */
+/* line 215, ../scss/refer-a-friend.scss */
 .friend-info {
   margin: 0 20px;
   width: 450px;
@@ -644,7 +645,7 @@ a.link {
 }
 
 /* This is the image by the first paragraph, the image on the Redeem Awards page has width added to it inline */
-/* line 221, ../scss/styles.scss */
+/* line 222, ../scss/refer-a-friend.scss */
 .cooler {
   display: inline;
   float: right;
@@ -655,20 +656,39 @@ a.link {
 }
 
 /* This is the Partners div that contains all the logos */
-/* line 230, ../scss/styles.scss */
+/* line 231, ../scss/refer-a-friend.scss */
 .partners {
   margin: 0 20px;
   display: block;
   padding: 0 20px;
 }
 
-/* line 235, ../scss/styles.scss */
+/* line 236, ../scss/refer-a-friend.scss */
 .logo-set {
   display: flex;
   justify-content: center;
+  max-width: 970px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../tools/ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+.logo-set:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 240, ../scss/refer-a-friend.scss */
+.logo-set li {
+  display: inline-flex;
+  width: 32.20339%;
+}
+/* line 244, ../scss/refer-a-friend.scss */
+.logo-set img {
+  width: 135px;
+  height: auto;
 }
 
-/* line 239, ../scss/styles.scss */
+/* line 249, ../scss/refer-a-friend.scss */
 .partners ul {
   list-style-type: none;
   margin: 0;
@@ -676,40 +696,42 @@ a.link {
   overflow: hidden;
 }
 
-/* line 245, ../scss/styles.scss */
-.partners-logos li {
-  display: inline-flex;
+/* line 255, ../scss/refer-a-friend.scss */
+.reward-logo {
+  display: flex;
+  justify-content: center;
 }
 
-/* line 248, ../scss/styles.scss */
-.partners-logos li a {
-  display: block;
-  color: white;
+/* line 259, ../scss/refer-a-friend.scss */
+.reward-info {
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  width: 90%;
+  margin: 0 auto;
 }
-
-/* line 255, ../scss/styles.scss */
-.partners-logos img {
-  width: 135px;
-  height: auto;
+/* line 263, ../scss/refer-a-friend.scss */
+.reward-info p {
+  font-style: italic;
 }
 
 /* These are all the form stylings */
-/* line 261, ../scss/styles.scss */
+/* line 269, ../scss/refer-a-friend.scss */
 .form {
   display: flex;
   justify-content: center;
 }
 
-/* line 265, ../scss/styles.scss */
+/* line 273, ../scss/refer-a-friend.scss */
 .form-2 {
   display: flex;
   justify-content: centers;
 }
+/* line 276, ../scss/refer-a-friend.scss */
+.form-2 p {
+  padding-left: 20px;
+  font-style: italic;
+}
 
-/* line 269, ../scss/styles.scss */
+/* line 281, ../scss/refer-a-friend.scss */
 .form-input, .form-input-2 {
   padding: 10px;
   margin: 0px 20px;
@@ -720,7 +742,7 @@ a.link {
   border-bottom: none;
 }
 
-/* line 278, ../scss/styles.scss */
+/* line 290, ../scss/refer-a-friend.scss */
 .message {
   width: 865px;
   height: 100px;
@@ -735,12 +757,12 @@ a.link {
   font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
 }
 
-/* line 291, ../scss/styles.scss */
+/* line 303, ../scss/refer-a-friend.scss */
 .message ::input-placeholder {
   padding: 0;
 }
 
-/* line 294, ../scss/styles.scss */
+/* line 306, ../scss/refer-a-friend.scss */
 .submit {
   margin: 0 21px;
   border: 1px solid #094790;
@@ -752,7 +774,19 @@ a.link {
   color: white;
 }
 
-/* line 304, ../scss/styles.scss */
+/* line 316, ../scss/refer-a-friend.scss */
+.submit-redeem {
+  margin: 80px 40px;
+  border: 1px solid #094790;
+  padding: 8px 45px;
+  background-color: #0E87FF;
+  background-image: linear-gradient(#0A7598, #03103E);
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+/* line 326, ../scss/refer-a-friend.scss */
 .redeem-award {
   margin: 0 21px;
   border: 1px solid #7999BF;
@@ -763,13 +797,13 @@ a.link {
   font-size: 18px;
   color: white;
 }
-/* line 313, ../scss/styles.scss */
+/* line 335, ../scss/refer-a-friend.scss */
 .redeem-award a {
   text-decoration: none;
   color: white;
 }
 
-/* line 318, ../scss/styles.scss */
+/* line 340, ../scss/refer-a-friend.scss */
 .what-is-this {
   padding-left: 3em;
   font-size: 14px;
@@ -778,7 +812,7 @@ a.link {
 }
 
 /* This is the Refer Paragraph over the form on the refer a freind page */
-/* line 325, ../scss/styles.scss */
+/* line 347, ../scss/refer-a-friend.scss */
 .refer {
   margin: 35px 20px 0 20px;
   display: block;
@@ -786,7 +820,7 @@ a.link {
 }
 
 /* This is the Referees Paragraph on the refer a freind page */
-/* line 331, ../scss/styles.scss */
+/* line 353, ../scss/refer-a-friend.scss */
 .referees {
   margin: 55px 20px 0 20px;
   width: 450px;
@@ -795,7 +829,7 @@ a.link {
 }
 
 /* The water splash image at the bottom of the page */
-/* line 338, ../scss/styles.scss */
+/* line 360, ../scss/refer-a-friend.scss */
 .splash {
   display: inline;
   float: right;
@@ -804,7 +838,7 @@ a.link {
 }
 
 /* Preferred Rewards section on Redeem Awards page */
-/* line 345, ../scss/styles.scss */
+/* line 367, ../scss/refer-a-friend.scss */
 .choose-reward {
   margin: 0 20px;
   width: 450px;
@@ -812,7 +846,7 @@ a.link {
   display: inline-block;
 }
 
-/* line 351, ../scss/styles.scss */
+/* line 373, ../scss/refer-a-friend.scss */
 .choose-below {
   font-style: italic;
   font-size: 14px;
@@ -820,107 +854,103 @@ a.link {
   margin-top: 0;
 }
 
-/* line 357, ../scss/styles.scss */
+/* line 379, ../scss/refer-a-friend.scss */
 .redeem-one-time {
   font-size: 14px;
 }
 
-/* line 360, ../scss/styles.scss */
+/* line 382, ../scss/refer-a-friend.scss */
 .splash {
   width: 400px;
 }
 
 @media (max-width: 430px) {
-  /* line 365, ../scss/styles.scss */
+  /* line 387, ../scss/refer-a-friend.scss */
   body {
     background-color: rgba(250, 253, 255, 0.93);
     background-image: none;
   }
 
-  /* line 369, ../scss/styles.scss */
+  /* line 391, ../scss/refer-a-friend.scss */
   .friend-info, .referees {
     width: 83.05085%;
   }
 
-  /* line 372, ../scss/styles.scss */
+  /* line 394, ../scss/refer-a-friend.scss */
   .form {
     padding-left: 6.77966%;
     width: 83.05085%;
   }
 
-  /* line 376, ../scss/styles.scss */
+  /* line 398, ../scss/refer-a-friend.scss */
   .form-input, .choose-reward {
     width: 89.79592%;
     margin: 0;
   }
 
-  /* line 380, ../scss/styles.scss */
+  /* line 402, ../scss/refer-a-friend.scss */
   form {
     width: 89.79592%;
   }
 
-  /* line 383, ../scss/styles.scss */
+  /* line 405, ../scss/refer-a-friend.scss */
   .form-input-2, .message {
     width: 100%;
   }
 
-  /* line 386, ../scss/styles.scss */
-  .redeem-section {
-    height: 2200px;
-  }
-
-  /* line 389, ../scss/styles.scss */
+  /* line 408, ../scss/refer-a-friend.scss */
   .splash {
     width: 260px;
     margin-top: 0;
   }
 
-  /* line 393, ../scss/styles.scss */
+  /* line 412, ../scss/refer-a-friend.scss */
   h1 {
     line-height: 38px;
   }
+
+  /* line 415, ../scss/refer-a-friend.scss */
+  .logo-set ul li {
+    justify-content: center;
+    width: 100%;
+  }
 }
 @media (min-width: 430px) and (max-width: 770px) {
-  /* line 398, ../scss/styles.scss */
+  /* line 421, ../scss/refer-a-friend.scss */
   img.cooler {
     width: 240px;
   }
 
-  /* line 401, ../scss/styles.scss */
-  .redeem-section {
-    height: 1384px;
-  }
-
-  /* line 404, ../scss/styles.scss */
+  /* line 424, ../scss/refer-a-friend.scss */
   form, .referees, .friend-info {
     width: 89.79592%;
   }
 
-  /* line 408, ../scss/styles.scss */
+  /* line 428, ../scss/refer-a-friend.scss */
   .splash {
     width: 260px;
     margin-top: 0;
   }
 }
 @media (max-width: 720px) {
-  /* line 414, ../scss/styles.scss */
+  /* line 434, ../scss/refer-a-friend.scss */
   img.cooler {
     display: none;
   }
 }
 @media (max-width: 960px) {
-  /* line 419, ../scss/styles.scss */
+  /* line 439, ../scss/refer-a-friend.scss */
   .form-input-2, .message {
     width: 100%;
   }
 
-  /* line 422, ../scss/styles.scss */
+  /* line 442, ../scss/refer-a-friend.scss */
   .name-text {
     margin-bottom: 18px;
   }
 }
 @media (max-width: 920px) {
-  /* line 427, ../scss/styles.scss */
+  /* line 447, ../scss/refer-a-friend.scss */
   body {
     background-color: rgba(250, 253, 255, 0.93);
     background-image: none;

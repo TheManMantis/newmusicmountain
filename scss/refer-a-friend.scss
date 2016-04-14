@@ -20,6 +20,7 @@ $section-background: rgba(250, 253, 255, 0.93);
 $what-is-this-color: #06B9F1;
 $link-color: #0496C6;
 $media-background-color: rgba(250, 253, 255, 0.93);
+$drop-down-shadow: 0px 0px 13px 0px rgba(177, 178, 195, 0);
 
 /* Shadows */
 $section-shadow: 0px 0px 13px 0px #B1B2C3;
@@ -111,7 +112,7 @@ a.link {
 }
 
 /* This is the div that all content will fall under */
-.refer-section, .redeem-section{
+.main-section{
   background-color: $section-background;
   box-shadow: $section-shadow;
   padding: 0;
@@ -129,20 +130,20 @@ header{
   display: block;
   padding: 35px 0px;
 }
+
+/*Navigation settings, slicknav*/
 .slicknav_menu {
 	display:none;
 }
-
 @media screen and (max-width: 940px) {
   .js #menu {
 		display:none;
 	}
-
 	.js .slicknav_menu {
 		display:block;
 	}
-  .refer-section, .redeem-section {
-    box-shadow: 0px 0px 13px 0px rgba(177, 178, 195, 0);
+  .main-section {
+    box-shadow: $drop-down-shadow;
   }
 }
 #primary-nav-wrap{
@@ -235,6 +236,15 @@ a.link {
 .logo-set{
   display: flex;
   justify-content: center;
+  @include container;
+  li{
+    display: inline-flex;
+    width: span(4);
+  }
+  img{
+    width: 135px;
+    height: auto;
+  }
 }
 .partners ul {
   list-style-type: none;
@@ -242,19 +252,17 @@ a.link {
   padding: 0;
   overflow: hidden;
 }
-.partners-logos li{
-  display: inline-flex;;
+.reward-logo{
+    display: flex;
+    justify-content: center;
 }
-.partners-logos li a{
-  display: block;
-  color: white;
+.reward-info{
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-.partners-logos img{
-  width: 135px;
-  height: auto;
+  width: 90%;
+  margin: 0 auto;
+  p{
+  font-style: italic;
+  }
 }
 
 /* These are all the form stylings */
@@ -265,6 +273,10 @@ a.link {
 .form-2{
   display: flex;
   justify-content: centers;
+  p{
+    padding-left: 20px;
+    font-style: italic;
+  }
 }
 .form-input, .form-input-2{
   padding: 10px;
@@ -293,6 +305,16 @@ a.link {
 }
 .submit{
   margin: 0 21px;
+  border: 1px solid #094790;
+  padding: 8px 45px;
+  background-color: #0E87FF;
+  background-image: linear-gradient( #0A7598, #03103E );
+  font-family:$site-font;
+  font-size: 18px;
+  color: white;
+}
+.submit-redeem{
+  margin: 80px 40px;
   border: 1px solid #094790;
   padding: 8px 45px;
   background-color: #0E87FF;
@@ -383,9 +405,6 @@ a.link {
   .form-input-2, .message{
     width: span(9 of 9);
   }
-  .redeem-section{
-    height: 2200px;
-  }
   .splash{
     width: 260px;
     margin-top: 0;
@@ -393,13 +412,14 @@ a.link {
   h1{
     line-height: 38px;
   }
+  .logo-set ul li{
+    justify-content: center;
+    width: span(12);
+  }
 }
 @media (min-width:$bp-s) and (max-width:$bp-m){
   img.cooler{
     width: 240px;
-  }
-  .redeem-section{
-    height: 1384px;
   }
   form,.referees, .friend-info {
     width: span(9 of 10);
